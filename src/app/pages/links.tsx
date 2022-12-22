@@ -30,7 +30,7 @@ export const links = [
   {
     index: 3,
     title: "Download Resume",
-    href: "https://drive.google.com/file/d/1MHlYtHKCC5Y6L95FPjU06Riag1nh_I0B/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1C_RkAHk_JklEdeRj96ThVo8q9aoefoaY/view?usp=sharing",
     icon: <FaDownload />,
   },
 ];
