@@ -8,7 +8,7 @@ import {
   VscCheck,
 } from "react-icons/vsc";
 import { IoIosGitBranch } from "react-icons/io";
-
+import styles from './styles.module.css';
 export default function Footer() {
   return (
     <Box
@@ -38,8 +38,9 @@ export default function Footer() {
         </Grid>
         <Grid
           item
-          sx={{ backgroundColor: "#333333", width: "200px" }}
+          sx={{ backgroundColor: "#333333" }}
           display="flex"
+          className={styles.foot}
         >
           <Stack direction="row" spacing={0.5} sx={{ pl: 1 }}>
             {/* <Stack direction="row" spacing={0.5}> */}

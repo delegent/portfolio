@@ -11,7 +11,7 @@ import React, { useEffect } from "react";
 import logo from "../../static/favicon.png";
 import { useLocation } from "react-router-dom";
 import { links } from "./links";
-
+import styles from './styles.module.css';
 interface Props {
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -38,14 +38,14 @@ export default function Home({ setSelectedIndex }: Props) {
       <Grid item xs={3}>
         <Stack direction={{ xs: "column", sm: "row-reverse" }} spacing={2}>
           <Box display="flex" sx={{ justifyContent: "center" }}>
-            <img src={logo} width="70%" alt="logo" />
+            <img className={styles.userimg}  src={logo} width="70%" alt="logo" />
           </Box>
           <Box>
             <Grid
               display="flex"
               justifyContent={{ xs: "center", sm: "flex-start" }}
             >
-              <Typography variant="h3">{process.env.REACT_APP_NAME}</Typography>
+              <Typography fontSize={{xs:"2rem" , lg:"3rem"}} textAlign={{xs:"center"}} variant="h3">{process.env.REACT_APP_NAME}</Typography>
             </Grid>
             <Grid
               display="flex"
